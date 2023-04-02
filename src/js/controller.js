@@ -9,6 +9,11 @@ import bookmarksView from './views/bookmarksView.js';
 import paginationView from './views/paginationView.js';
 import addRecipeView from './views/addRecipeView.js';
 import { async } from 'regenerator-runtime';
+// console.log(icons);
+
+// if(module.hot){
+//   module.hot.accept();
+// }
 
 const controlRecipe = async function(){
   try {

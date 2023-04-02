@@ -2,7 +2,7 @@
   "name": "forkify",
   "version": "1.0.0",
   "description": "Recipe application",
-  "default": "index.js",
+  "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html --dist-dir ./dist"
@@ -10,9 +10,7 @@
   "author": "Sakeerin",
   "license": "ISC",
   "devDependencies": {
-    "@parcel/transformer-image": "^2.0.0-rc.0",
-    "@parcel/transformer-sass": "^2.0.0-rc.0",
-    "parcel": "^2.0.0-rc.0"
+    "parcel": "^2.8.3"
   },
   "dependencies": {
     "core-js": "^3.29.0",
