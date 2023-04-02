@@ -1,4 +1,4 @@
-import View from "./View";
+import View from "./View.js";
 import icons from 'url:../../img/icons.svg';
 
 class AddRecipeView extends View{
@@ -40,7 +40,7 @@ class AddRecipeView extends View{
         });
     };
 
-    // _generateMarkup(){}
+    _generateMarkup(){}
 }
 
 export default new AddRecipeView();
