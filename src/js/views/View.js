@@ -1,5 +1,4 @@
 import icons from 'url:../../img/icons.svg';
-import {Fraction} from 'fractional';
 export default class View{
     _data;
 
@@ -10,8 +9,9 @@ export default class View{
      * @returns {undefined | string} A markup string is returned if render=false
      * @this {Object} View instance
      * @author Sakeerin
-     * @todo Finish implementation
+     * @todo Finish implement
      */
+
     render(data, render = true){
         if(!data || (Array.isArray(data) && data.length === 0)) return this.renderError();
         this._data = data;
@@ -21,7 +21,7 @@ export default class View{
 
         this._clear();
         this._parentElement.insertAdjacentHTML('afterbegin',markup);
-    }
+    };
 
     update(data){
         this._data = data;
@@ -56,7 +56,7 @@ export default class View{
 
     _clear(){
         this._parentElement.innerHTML = '';
-    }
+    };
 
     renderSpinner(){
         const markup = `
@@ -84,15 +84,15 @@ export default class View{
 
         this._clear();
         this._parentElement.insertAdjacentHTML('afterbegin',markup);
-    }
+    };
 
     renderMessage(message = this._message){
         const markup = `
         <div class="massage">
             <div>
-            <svg>
-                <use href="${icons}#icon-smile"></use>
-            </svg>
+                <svg>
+                    <use href="${icons}#icon-smile"></use>
+                </svg>
             </div>
             <p>${message}</p>
         </div>
@@ -100,5 +100,5 @@ export default class View{
 
         this._clear();
         this._parentElement.insertAdjacentHTML('afterbegin',markup);
-    }
+    };
 }
